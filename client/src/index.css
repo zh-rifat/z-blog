@@ -1,0 +1,31 @@
+@font-face {
+  font-family: nabla-regular;
+  src: url(fonts/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
+}
+@font-face {
+  font-family: patrick-regular;
+  src: url(fonts/PatrickHand-Regular.ttf);
+}
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+    font-family: nabla-regular;
+}
+
+.text{
+  font-family: nabla-regular;
+  font-size:30px;
+}

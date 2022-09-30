@@ -1,0 +1,24 @@
+
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+    color: #2b2f2b;
+    font-family: patrick-regular;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    position: relative;
+}
+h3{
+    font-size: 40px;
+    position: relative;
+    top: -10px;
+}
+img.headerbg{
+    width: 100%;  
+    position: relative;
+    top: -36px;
+    z-index: -1;
+}
