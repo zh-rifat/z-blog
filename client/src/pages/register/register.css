@@ -1,5 +1,5 @@
 .register{
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 100px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,9 +15,18 @@
     display: flex;
     flex-direction: column;
     width: 25%;
+    min-width: 300px;
 }
 .registerForm>label{
     margin: 10px 0;
+    display: inline-block;
+}
+.registerForm span.warning{
+    float: right;
+    color: #b10505;
+    text-align: center;
+    margin: auto;
+
 }
 .registerForm>input{
     padding: 10px;
@@ -34,14 +43,12 @@
     padding: 10px;
 }
 
-.registerLoginBtn{
-    position: absolute;
-    top: 90px;
-    right: 20px;
-    background-color: teal;
+.reg-login{
     border: none;
     padding: 10px;
-    cursor: pointer;
-    color: #fff;
-    border-radius: 10px;
+    color: #000;
+}
+.reg-login .link{
+    cursor:pointer;
+    color: teal;
 }

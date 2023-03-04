@@ -18,7 +18,7 @@
 }
 
 .writeFormGroup{
-    margin-left: 150px;
+    margin: 0 150px;
     display: flex;
     align-items: center;
 }
@@ -51,14 +51,23 @@
 .writeText{
     font-size: 20px;
 }
-.writeSubmit{
-    position: absolute;
-    top:20px;
-    right: 50px;
-    color: #fff;
-    background-color: teal;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-     
+.writeSubmit {
+	color: #fff;
+	background-color: teal;
+	padding: 20px;
+	border: none;
+	border-radius: 10px;
+	margin: auto;
+	display: block;
+	width: 150px;
+}
+.write-cats{
+    border: 1px solid #000;
+}
+.write-cats label{
+    margin: 5px 10px;
+    text-transform: uppercase;
+}
+.write-cats input{
+    margin: 0 5px;
 }

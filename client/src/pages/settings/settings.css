@@ -22,7 +22,8 @@
 
 .settingsDeleteTitle{
     color: tomato;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
 }
 .settingsProfilePic{
@@ -74,4 +75,13 @@
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
+}
+.p-username{
+    font-size: 18px;
+    color: #000000;
+}
+
+.p-username>span{
+    color: #1b0772;
+    font-weight: bold;
 }

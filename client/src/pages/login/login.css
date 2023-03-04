@@ -1,5 +1,5 @@
 .login{
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     width: 25%;
+    min-width: 300px;
 }
 .loginForm>label{
     margin: 10px 0;
@@ -33,15 +34,16 @@
     border-radius: 10px;
     padding: 10px;
 }
-
-.loginRegBtn{
-    position: absolute;
-    top: 90px;
-    right: 20px;
-    background-color: #234682;
+.loginForm>button:disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+.login-reg{
     border: none;
     padding: 10px;
-    cursor: pointer;
-    color: #fff;
-    border-radius: 10px;
+    color: #000;
+}
+.login-reg .link{
+    cursor:pointer;
+    color: teal;
 }

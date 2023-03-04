@@ -22,3 +22,10 @@ img.headerbg{
     top: -36px;
     z-index: -1;
 }
+
+
+@media screen and (max-width:768px) {
+    .headerTitle *{
+        font-size: 25px;
+    }
+}

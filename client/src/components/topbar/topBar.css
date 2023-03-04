@@ -2,42 +2,53 @@
     width: 100%;
     height: 80px;
     background:#ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    
     position: sticky;
     top: 0;
     z-index: 999;
 }
+.container{
+    width:90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
 .nav{
     display: flex;
     flex: 6;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
 }
 .topList{
     list-style:none;
 }
 .topListItem{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 15px;
     cursor: pointer;
     border: 1px solid #000;
     margin: 2px;
+    color: #0b406e;
 }
 
 .right{
     display: flex;
     flex:4;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 .right img{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    margin-left: 20px;
 }
-
+i{
+    font-size: 25px;
+}
 .right>*{
     margin:10px;
 }
@@ -48,10 +59,61 @@
     text-decoration: none;
     color: inherit;
 }
+#mobile{
+    display:none;
+    cursor: pointer;
+}
 
 
-
-
+@media screen and (max-width:768px) {
+    #mobile{
+        display: block;
+        width: 20px;
+        margin-left: 20px;
+    }
+    #mobile i{
+    }
+    .right{
+        justify-content: right;
+    }
+    .right>*{
+        margin: 0;
+    }
+    .right .topList{
+        position: fixed;
+        top: 80px;
+        height: 100vh;
+        background-color: #ffffffef;
+        box-shadow: 0 40px 20px  #000;
+        padding: 20px 0 0 10px;
+    }
+    .nav .topList{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 125px;
+        z-index: 9;
+    }
+    .topList{
+        position: fixed;
+        right:-250px;
+        width: 200px;
+        transition: .2s;
+    }
+    .topListItem{
+        border: none;
+        padding: 0;
+    }
+    .right a::after{
+        content: " | ";
+    }
+    
+    .right a:last-child::after{
+        content: "";
+    }
+    
+}
 
 
 
