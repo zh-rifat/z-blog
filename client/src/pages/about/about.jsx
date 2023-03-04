@@ -1,7 +1,6 @@
 import "./about.css";
 export default function About(){
     return(
-        
         <div className="about">
             <p>Welcome to zblog!
     We are a team of passionate writers and bloggers who love to share our knowledge and experience with the world. Our mission is to provide high-quality, informative, and engaging content on a wide range of topics, from technology and business to travel and lifestyle.
