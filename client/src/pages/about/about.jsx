@@ -8,5 +8,5 @@ export default function About(){
         </p>
         <p>Thank you for visiting zblog, and we hope you enjoy our content!</p>
         </div>
-    )
+    );
 }

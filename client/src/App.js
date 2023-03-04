@@ -13,7 +13,7 @@ import Register from './pages/register/Register';
 import { useContext } from 'react';
 import { Context } from './context/Context';
 import Edit from './pages/edit/Edit';
-import About from './pages/about/About';
+// import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 
 
