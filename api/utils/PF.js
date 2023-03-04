@@ -1,5 +1,5 @@
 const PF=()=>{
-    return "http://localhost:5000/images/";
+    return "https://zblog-api.adaptable.app/";
 }
 
 module.exports=PF;
