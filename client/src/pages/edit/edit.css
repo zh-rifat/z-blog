@@ -63,6 +63,7 @@
 	margin: auto;
 	display: block;
 	width: 150px;
+    cursor: pointer;
 }
 
 .edit-cats{
