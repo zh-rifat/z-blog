@@ -4,21 +4,20 @@
 
 .edit{
     padding-top: 50px;
+    margin: auto;
+    width: 80%;
 }
 .editImg{
-    margin-left: 150px;
     width: 70vw;
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
-
 }
 .editForm{
     position: relative;
 }
 
 .editFormGroup{
-    margin: 0 150px;
     display: flex;
     align-items: center;
 }
@@ -50,6 +49,10 @@
 
 .editText{
     font-size: 20px;
+    border: 1px solid #8382827f;
+    border-radius: 4px;
+    margin: 20px 0;
+    
 }
 .editSubmit {
 	color: #fff;
@@ -64,11 +67,26 @@
 
 .edit-cats{
     border: 1px solid #000;
+    display: inline-block;
 }
-.edit-cats label{
+.edit-cats ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.edit-cats ul li{
     margin: 5px 10px;
     text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+
 }
 .edit-cats input{
     margin: 0 5px;
+}
+
+@media screen and (max-width:768px) {
+    
+    .edit-cats ul{
+        grid-template-columns: auto auto;
+    }
 }

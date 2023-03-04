@@ -5,9 +5,8 @@ import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
-
+import PF from "../../utils/PF";
 export default function SinglePost() {
-  const PF="http://localhost:5000/images/";
   const loc=useLocation();
   const postId=loc.pathname.split("/")[2];
   const [post,setPost]=useState({});
@@ -39,7 +38,7 @@ export default function SinglePost() {
     <div className="singlePost">
         <div className="singlePostWrapper">
           {
-            post.photo&&<img src={PF+post.photo} alt="" />
+            post.photo&&<img src={PF()+post.photo} alt="" />
           }
           
           <h1 className="singlePostTitle">{post.title}</h1>

@@ -127,7 +127,7 @@ export default function Edit(){
                 </div>
 
                 <div className="editFormGroup">
-                    <textarea type="text" name="" value={desc} className="editInput editText" placeholder="Tell your story..." onChange={(e)=>setDesc(e.target.value)}></textarea>
+                    <textarea type="text" rows={10} name="" value={desc} className="editInput editText" placeholder="Tell your story..." onChange={(e)=>setDesc(e.target.value)}></textarea>
                 </div>
                 <button className="editSubmit" type="submit">Publish</button>
             </form>
