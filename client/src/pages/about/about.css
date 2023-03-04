@@ -1,0 +1,9 @@
+div.about{
+    width: 75%;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+}
+div.about p{
+    margin:20px 0;
+}

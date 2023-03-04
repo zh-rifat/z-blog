@@ -1,5 +1,4 @@
 import "./topBar.css"
-import avatar from '../../assets/img/avatar.jpg';
 import '../../assets/css/all.min.css';
 import { Link } from "react-router-dom";
 import { useContext, useEffect } from "react";
@@ -9,7 +8,8 @@ import { useState } from "react";
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
   const handleLogout = () => {
-    dispatch({ type: "LOGOUT" })
+    dispatch({ type: "LOGOUT" });
+    window.location.replace("/login");
   }
   
   const [clicked, setClicked] = useState(false)
@@ -24,9 +24,14 @@ export default function TopBar() {
       for(let i=0;i<elements.length;i++){
         elements[i].style.right="0";
       }
+    if(user){
+      const topList=document.getElementsByClassName("topList")[0];
+      console.log(topList);
+      topList.style.cssText="right:0;top: 80px;height: 100vh; background-color: #ffffffef;box-shadow: 0 40px 20px  #000;padding: 20px 0 0 10px;";
+    }
     }
   
-  }, [clicked]);
+  }, [clicked,user]);
   
   useEffect(() => {
     document.addEventListener("mouseup",handleBlur);
@@ -38,14 +43,14 @@ export default function TopBar() {
   const handleBlur=(e)=>{
     const btn=document.getElementById("mobile").contains(e.target);
     const list=document.getElementsByClassName("topList");
-    const listItem=document.getElementsByClassName("topListItem");
-    for(let k in listItem){
-      console.log(typeof(list[k]));
-      console.log(list[k]);
-      if(typeof(list[k])=="object"&&!list[k].contains(e.target)){
-        setClicked(false);
-      }
-    }
+    // const listItem=document.getElementsByClassName("topListItem");
+    // for(let k in listItem){
+    //   console.log(typeof(list[k]));
+    //   console.log(list[k]);
+    //   if(typeof(list[k])=="object"&&!list[k].contains(e.target)){
+    //     setClicked(false);
+    //   }
+    // }
     let listClicked=false;
     for(let k in list){
       console.log(typeof(list[k]));

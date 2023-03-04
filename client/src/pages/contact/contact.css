@@ -1,0 +1,15 @@
+.contact{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact a{
+    padding: 15px;
+    background: teal;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -13,7 +13,8 @@ import Register from './pages/register/Register';
 import { useContext } from 'react';
 import { Context } from './context/Context';
 import Edit from './pages/edit/Edit';
-import About from './pages/about/about';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/post/:_id" element={<Post/>}/>
         <Route path="/login" element={user?<Home/>:<Login/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
         <Route path="/register" element={user?<Home/>:<Register/>}/>
         <Route path="/write" element={user?<Write/>:<Login/>}/>
         <Route path="/edit/:_id" element={user?<Edit/>:<Login/>}/>
