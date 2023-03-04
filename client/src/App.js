@@ -13,7 +13,7 @@ import { useContext } from 'react';
 import { Context } from './context/Context';
 import Edit from './pages/edit/Edit';
 import Contact from './pages/contact/Contact';
-import About from './pages/about/about';
+import About from './pages/about/About';
 
 
 function App() {

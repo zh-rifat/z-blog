@@ -83,20 +83,24 @@ export default function Write() {
                     <input type="file" name="" id="inputFile" onChange={(e)=>setFile(e.target.files[0])}/>
                     <input type="text" name="" id="" placeholder="Title" className="writeInput" autoFocus={true} onChange={(e)=>setTitle(e.target.value)}/>
                 </div>
+                    <h4>Select categories: </h4>
                 <div className="writeFormGroup write-cats">
-                    {cats.map((c)=>(
-                    
-                    <label>
-                        <input type="checkbox" name={c.name} onChange={handleCheckboxChange} id="" />
-                        {c.name}
-                    </label>
-                    ))
-                    }
+                    <ul>
+                        {cats.map((c)=>(
+                        <li>
+                            <label>
+                                <input type="checkbox" name={c.name} onChange={handleCheckboxChange} id="" />
+                                {c.name}
+                            </label>
+                        </li>
+                        ))
+                        }
+                    </ul>
                 </div>
 
 
                 <div className="writeFormGroup">
-                    <textarea type="text" name="" className="writeInput writeText" placeholder="Tell your story..." onChange={(e)=>setDesc(e.target.value)}></textarea>
+                    <textarea type="text" rows={10} name="" className="writeInput writeText" placeholder="Tell your story..." onChange={(e)=>setDesc(e.target.value)}></textarea>
                 </div>
                 <button className="writeSubmit" type="submit">Publish</button>
             </form>

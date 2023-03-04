@@ -4,9 +4,10 @@
 
 .write{
     padding-top: 50px;
+    margin: auto;
+    width: 80%;
 }
 .writeImg{
-    margin-left: 150px;
     width: 70vw;
     height: 250px;
     border-radius: 10px;
@@ -18,7 +19,6 @@
 }
 
 .writeFormGroup{
-    margin: 0 150px;
     display: flex;
     align-items: center;
 }
@@ -50,6 +50,10 @@
 
 .writeText{
     font-size: 20px;
+    border: 1px solid #8382827f;
+    border-radius: 4px;
+    margin: 20px 0;
+    
 }
 .writeSubmit {
 	color: #fff;
@@ -63,11 +67,26 @@
 }
 .write-cats{
     border: 1px solid #000;
+    display: inline-block;
 }
-.write-cats label{
+.write-cats ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.write-cats ul li{
     margin: 5px 10px;
     text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+
 }
 .write-cats input{
     margin: 0 5px;
+}
+
+@media screen and (max-width:768px) {
+    
+    .write-cats ul{
+        grid-template-columns: auto auto;
+    }
 }
