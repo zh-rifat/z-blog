@@ -27,7 +27,7 @@ function App() {
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/post/:_id" element={<Post/>}/>
         <Route path="/login" element={user?<Home/>:<Login/>}/>
-        <Route path="/about" element={<About/>}/>
+        {/* <Route path="/about" element={<About/>}/> */}
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/register" element={user?<Home/>:<Register/>}/>
         <Route path="/write" element={user?<Write/>:<Login/>}/>
