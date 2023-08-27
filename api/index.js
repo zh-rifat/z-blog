@@ -18,10 +18,7 @@ const path = require("path");
 
 app.use(express.json());
 app.use("/images",express.static(path.join(__dirname,"/images")))
-app.use(cors({
-    origin:"https://z-blog.netlify.app"
-    // origin:"http://localhost:3000"
-}));
+app.use(cors());
 mongoose.connect(process.env.MONGO_URL)
 .then(console.log("db connected"))
 .catch((err)=>console.log(err));
